@@ -17,7 +17,6 @@ const promise3 = 10;
 //   .catch((err) => console.error(err));
 
 // Promise Race
-
 // Input is the array of promises.
 // Return the first one to be resolved or reject.
 
