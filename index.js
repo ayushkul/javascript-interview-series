@@ -1,20 +1,14 @@
-console.log("Polyfill of forEach?");
+console.log("Polyfill of Promise.any");
 
-// Logic of for loop
-// Computation is performed for each iteration
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Hello js series");
+  }, 100);
+});
 
-let arr = [2, 4, 5, 9, 12, 18, 20];
+const promise2 = new Promise((resolve, reject) => {
+  reject("Hello js series TID");
+});
 
-// arr.forEach((value, index, array) => console.log(value));
-
-Array.prototype.forEach = null;
-
-// Polyfill
-Array.prototype.myForEach = function (callback) {
-  for (let i = 0; i < this.length; i++) {
-    callback(this[i], i, this);
-  }
-};
-
-arr.myForEach((value, index, array) => console.log(value));
+const promise3 = 10;
 

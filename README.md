@@ -6,8 +6,8 @@
 2. Map
 4. forEach
 3. reduce
-5. deep clone
 6. promise.all
-7. promise.race
 8. promise.any
+7. promise.race
+5. deep clone
 
